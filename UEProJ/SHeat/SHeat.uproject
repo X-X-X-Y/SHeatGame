@@ -9,7 +9,13 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"ModularGameplayActors"
+				"ModularGameplayActors",
+				"Engine",
+				"ModularGameplay",
+				"CommonGame",
+				"GameFeatures",
+				"EnhancedInput",
+				"GameplayAbilities"
 			]
 		}
 	],
