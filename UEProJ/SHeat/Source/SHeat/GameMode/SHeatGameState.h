@@ -6,6 +6,7 @@
 #include "ModularGameState.h"
 #include "SHeatGameState.generated.h"
 
+class USHeatExperienceManagerComponent;
 /**
  * 
  */
@@ -13,5 +14,11 @@ UCLASS()
 class SHEAT_API ASHeatGameState : public AModularGameStateBase
 {
 	GENERATED_BODY()
+
+public:
+	ASHeatGameState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 	
+private:
+	UPROPERTY()
+	TObjectPtr<USHeatExperienceManagerComponent> ExperienceManagerComponent;
 };

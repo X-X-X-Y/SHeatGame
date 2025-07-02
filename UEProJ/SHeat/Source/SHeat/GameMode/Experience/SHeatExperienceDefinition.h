@@ -12,7 +12,7 @@ class USHeatPawnData;
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class SHEAT_API USHeatExperienceDefinition : public UPrimaryDataAsset
 {
 	GENERATED_BODY()

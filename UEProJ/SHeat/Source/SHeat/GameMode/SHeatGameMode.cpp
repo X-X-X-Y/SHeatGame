@@ -3,6 +3,7 @@
 
 #include "GameMode/SHeatGameMode.h"
 
+#include "SHeatGameState.h"
 #include "SHeatWorldSetting.h"
 #include "Character/SHeatCharacter.h"
 #include "Character/SHeatPawnData.h"
@@ -17,7 +18,7 @@
 ASHeatGameMode::ASHeatGameMode(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
-	// GameStateClass = ALyraGameState::StaticClass();
+	GameStateClass = ASHeatGameState::StaticClass();
 	// GameSessionClass = ALyraGameSession::StaticClass();
 	PlayerControllerClass = ASHeatPlayerController::StaticClass();
 	// ReplaySpectatorPlayerControllerClass = ALyraReplayPlayerController::StaticClass();
