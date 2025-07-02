@@ -27,6 +27,8 @@ public:
 		return (Actor ? Actor->FindComponentByClass<USHeatPawnExtensionComponent>() : nullptr);
 	}
 
+	
+
 protected:
 	/** Pawn data used to create the pawn. Specified from a spawn function or on a placed instance. */
 	UPROPERTY(EditInstanceOnly, Category = "SHeat|Pawn")

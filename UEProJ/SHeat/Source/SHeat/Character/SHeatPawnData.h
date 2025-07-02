@@ -6,6 +6,7 @@
 #include "Engine/DataAsset.h"
 #include "SHeatPawnData.generated.h"
 
+class USHeatInputConfig;
 /**
  * 
  */
@@ -20,6 +21,9 @@ public:
 public:
 
 	// Class to instantiate for this pawn (should usually derive from ALyraPawn or ALyraCharacter).
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Pawn")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "SHeat|Pawn")
 	TSubclassOf<APawn> PawnClass;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "SHeat|Input")
+	TObjectPtr<USHeatInputConfig> InputConfig;
 };
